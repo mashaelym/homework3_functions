@@ -5,6 +5,7 @@ $text = "String Functions";
 $obj->StringFunc($text);
 $obj->chr($value);
 $obj->strlen($name);
+$obj->rtrim(Sstr);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -25,6 +26,15 @@ echo '<h2>2: Strlen() function</h2>';
 echo 'The string length for ' . $name . ' is ' . strlen($name);
 echo '<hr>';
 }
+ 
+public function rtrim($str) {
+$str='    Yousef   ';
+echo '<h2>3: Rtrim() function</h2>';
+echo 'We are trimming the right white space and the result is: ' .  rtrim($str);
+echo '<hr>';
+}
+
+
 
 public function __destruct() {
 echo '</br> Finished!';
