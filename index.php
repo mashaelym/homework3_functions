@@ -6,8 +6,9 @@ $obj->StringFunc($text);
 $obj->chr($value);
 $obj->strlen($name);
 $obj->rtrim($str);
-$obj->htmlentities($val);
+$obj->htmlspecialchars($val);
 $obj->strpos($strr,$strr2);
+$obj->str_replace($str1,$new,$str2);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -37,10 +38,10 @@ echo 'The name after Right trimming is: ' .  rtrim($str);
 echo '<hr>';
 }
 //fourth
-public function htmlentities($val) {
+public function htmlspecialchars($val) {
 $val="&amp";
 echo '<h2>4: Htmlspecialchars() function</h2>';
-echo 'The HTML special character for ' . $val . ' is ' . htmlentities($val);
+echo 'The HTML special character for ' . $val . ' is ' . htmlspecialchars($val);
 echo '<hr>';
 }
 
@@ -53,7 +54,17 @@ echo 'The position of the string '. '(' . $strr2  . ')' . ' in this sentence ' .
 echo '<hr>';
 
 }
+//sixth
+public function str_replace($str1,$new,$str2){
+$str1='-';
+$new=' ';
+$str2= 'It-is-a-beautiful-day!';
+echo '<h2>6: Str_replace() function</h2>';
+echo 'Original sentence: ' . $str2;
+echo '<p> Replacing all dashes with spaces, the sentence would look like this: </p>' . str_replace($str1,$new,$str2);
+echo '<hr>';
 
+}
 public function __destruct() {
 echo '</br> Finished!';
 }
