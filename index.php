@@ -9,6 +9,7 @@ $obj->rtrim($str);
 $obj->htmlspecialchars($val);
 $obj->strpos($strr,$strr2);
 $obj->str_replace($str1,$new,$str2);
+$obj->str_pad($stringg, $num);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -63,12 +64,20 @@ echo '<h2>6: Str_replace() function</h2>';
 echo 'Original sentence: ' . $str2;
 echo '<p> Replacing all dashes with spaces, the sentence would look like this: </p>' . str_replace($str1,$new,$str2);
 echo '<hr>';
-
 }
+//seventh
+public function str_pad($stringg, $num){
+$stringg='Yousef';
+$num=11;
+echo '<h2>7: Str_pad() function</h2>';
+echo 'Padding the name ' . $stringg . ' with 11 spaces, the result is:  ' .
+str_pad($stringg, $num);
+echo '<hr>';
+}
+
 public function __destruct() {
 echo '</br> Finished!';
 }
 }
-
 
 ?>
