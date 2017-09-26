@@ -10,6 +10,7 @@ $obj->htmlspecialchars($val);
 $obj->strpos($strr,$strr2);
 $obj->str_replace($str1,$new,$str2);
 $obj->str_pad($stringg, $num);
+$obj->str_shuffle($shuf);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -74,7 +75,15 @@ echo 'Padding the name ' . $stringg . ' with 11 spaces, the result is:  ' .
 str_pad($stringg, $num);
 echo '<hr>';
 }
+//eighth
+public function str_shuffle($shuf){
+$shuf='programming is fun';
+echo '<h2>8: Str_shuffle() function</h2>';
+echo 'Shuffiling  ' .'('. $shuf .')'. ' to ' .'('. str_shuffle($shuf).')';
+echo '<hr>';
 
+
+}
 public function __destruct() {
 echo '</br> Finished!';
 }
