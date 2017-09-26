@@ -11,6 +11,7 @@ $obj->strpos($strr,$strr2);
 $obj->str_replace($str1,$new,$str2);
 $obj->str_pad($stringg, $num);
 $obj->str_shuffle($shuf);
+$obj->strrev($ster);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -81,9 +82,16 @@ $shuf='programming is fun';
 echo '<h2>8: Str_shuffle() function</h2>';
 echo 'Shuffiling  ' .'('. $shuf .')'. ' to ' .'('. str_shuffle($shuf).')';
 echo '<hr>';
-
+}
+//ninth
+public function strrev($ster){
+$ster='Reverse This';
+echo '<h2>9: Strrev() function</h2>';
+echo 'Reversing  ' .'('. $ster .')'. ' to become ' .'('. strrev($ster).')';
+echo '<hr>';
 
 }
+
 public function __destruct() {
 echo '</br> Finished!';
 }
