@@ -12,6 +12,7 @@ $obj->str_replace($str1,$new,$str2);
 $obj->str_pad($stringg, $num);
 $obj->str_shuffle($shuf);
 $obj->strrev($ster);
+$obj->strtoupper($up);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -91,6 +92,16 @@ echo 'Reversing  ' .'('. $ster .')'. ' to become ' .'('. strrev($ster).')';
 echo '<hr>';
 
 }
+//tenth (last)!!!
+public function strtoupper($up){
+$up='make me all caps';
+echo '<h2>10: Strtoupper() function</h2>';
+echo 'Converting the folloing string   ' .'('. $up .')'. ' to all upper case: ' .'('. strtoupper($up).')';
+echo '<hr>';
+
+
+}
+
 
 public function __destruct() {
 echo '</br> Finished!';
