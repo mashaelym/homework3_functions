@@ -19,6 +19,7 @@ $obj->array_pop($array);
 $obj->array_shift($array);
 $obj->array_sum($price);
 $obj->array_product($numbers);
+$obj->sort($numbers1);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -138,8 +139,14 @@ echo '<h2>4: Array_product() function</h2>';
 echo 'The product of  ' . $i=$numbers[0] .' and ' . $ii=$numbers[1] . ' = ' . array_product($numbers);
 echo '<hr>';
 }
-
-
+//fifth
+public function sort($numbers1){
+$numbers1=array('S','A','B','L');
+echo '<h2>5: Sort() function</h2>';
+echo 'This is the array list after sorting:  '. sort($numbers1);
+print_r($numbers1);
+echo '<hr>';
+}
 
 //destruct
 public function __destruct() {
