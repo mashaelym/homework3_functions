@@ -21,6 +21,7 @@ $obj->array_sum($price);
 $obj->array_product($numbers);
 $obj->sort($numbers1);
 $obj->array_unique($uniq);
+$obj->count($arry);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -158,7 +159,13 @@ array_unique($uniq);
 print_r($uniq);
 echo '<hr>';
 }
-
+//seventh
+public function count($arry){
+$arry=array(12,34,5,12,5,4,4,2,7,8);
+echo '<h2>7: Count() function</h2>';
+echo 'The number of elements in the array is  ' . count($arry);
+echo '<hr>';
+}
 
 //destruct
 public function __destruct() {
