@@ -18,6 +18,7 @@ $obj->ArrayFunc($arryText);
 $obj->array_pop($array);
 $obj->array_shift($array);
 $obj->array_sum($price);
+$obj->array_product($numbers);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -130,6 +131,15 @@ echo '<h2>3: Array_sum() function</h2>';
 echo 'The total price is  ' . array_sum($price);
 echo '<hr>';
 }
+//fourth
+public function array_product($numbers){
+$numbers=array(56,33);
+echo '<h2>4: Array_product() function</h2>';
+echo 'The product of  ' . $i=$numbers[0] .' and ' . $ii=$numbers[1] . ' = ' . array_product($numbers);
+echo '<hr>';
+}
+
+
 
 //destruct
 public function __destruct() {
