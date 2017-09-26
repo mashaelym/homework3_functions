@@ -13,6 +13,9 @@ $obj->str_pad($stringg, $num);
 $obj->str_shuffle($shuf);
 $obj->strrev($ster);
 $obj->strtoupper($up);
+$arryText= "Array Functions";
+$obj->ArrayFunc($arryText);
+
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -98,11 +101,16 @@ $up='make me all caps';
 echo '<h2>10: Strtoupper() function</h2>';
 echo 'Converting the folloing string   ' .'('. $up .')'. ' to all upper case: ' .'('. strtoupper($up).')';
 echo '<hr>';
-
-
 }
+//arrays
+public function ArrayFunc(){
+echo '<h1>Array Functions:</h1>';
+print($arryText);
+}
+//first array function
 
 
+//destruct
 public function __destruct() {
 echo '</br> Finished!';
 }
