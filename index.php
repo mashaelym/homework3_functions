@@ -16,6 +16,7 @@ $obj->strtoupper($up);
 $arryText= "Array Functions";
 $obj->ArrayFunc($arryText);
 $obj->array_pop($array);
+$obj->array_shift($array);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -112,6 +113,13 @@ public function array_pop($array){
 $array=array(1,2,3,4,5,6,7,8,9,10);
 echo '<h2>1: Array_pop() function</h2>';
 echo 'The last element of the array is: ' . array_pop($array);
+echo '<hr>';
+}
+//second 
+public function array_shift($array){
+$array=array('Mashael','Yousef','Fouzia','Marwa');
+echo '<h2>2: Array_shift() and Print_r() functions</h2>';
+echo 'The removed and returned first value of this array is: ' . print_r( $array)  . array_shift($array);
 echo '<hr>';
 }
 
