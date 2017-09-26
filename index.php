@@ -17,6 +17,7 @@ $arryText= "Array Functions";
 $obj->ArrayFunc($arryText);
 $obj->array_pop($array);
 $obj->array_shift($array);
+$obj->array_sum($price);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -120,6 +121,13 @@ public function array_shift($array){
 $array=array('Mashael','Yousef','Fouzia','Marwa');
 echo '<h2>2: Array_shift() and Print_r() functions</h2>';
 echo 'The removed and returned first value of this array is: ' . print_r( $array)  . array_shift($array);
+echo '<hr>';
+}
+//third
+public function array_sum($price){
+$price=array(12.4,44.5,769.76,66.98);
+echo '<h2>3: Array_sum() function</h2>';
+echo 'The total price is  ' . array_sum($price);
 echo '<hr>';
 }
 
