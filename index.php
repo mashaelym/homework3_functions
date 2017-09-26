@@ -15,7 +15,7 @@ $obj->strrev($ster);
 $obj->strtoupper($up);
 $arryText= "Array Functions";
 $obj->ArrayFunc($arryText);
-
+$obj->array_pop($array);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -108,7 +108,12 @@ echo '<h1>Array Functions:</h1>';
 print($arryText);
 }
 //first array function
-
+public function array_pop($array){
+$array=array(1,2,3,4,5,6,7,8,9,10);
+echo '<h2>1: Array_pop() function</h2>';
+echo 'The last element of the array is: ' . array_pop($array);
+echo '<hr>';
+}
 
 //destruct
 public function __destruct() {
