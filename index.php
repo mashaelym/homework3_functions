@@ -20,6 +20,7 @@ $obj->array_shift($array);
 $obj->array_sum($price);
 $obj->array_product($numbers);
 $obj->sort($numbers1);
+$obj->array_unique($uniq);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -143,10 +144,21 @@ echo '<hr>';
 public function sort($numbers1){
 $numbers1=array('S','A','B','L');
 echo '<h2>5: Sort() function</h2>';
-echo 'This is the array list after sorting:  '. sort($numbers1);
+echo 'This is the array list after sorting:  ';
+sort($numbers1);
 print_r($numbers1);
 echo '<hr>';
 }
+//sixth
+public function array_unique($uniq){
+$uniq=array(12,12,15,15,19,19,19);
+echo '<h2>6: Array_unique() function</h2>';
+echo 'The unique array is  ';
+array_unique($uniq);
+print_r($uniq);
+echo '<hr>';
+}
+
 
 //destruct
 public function __destruct() {
