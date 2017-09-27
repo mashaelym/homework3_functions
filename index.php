@@ -1,5 +1,4 @@
 <?php
-
 $obj =new main();
 $text = "String Functions";
 $obj->StringFunc($text);
@@ -24,6 +23,7 @@ $obj->array_unique($uniq);
 $obj->count($arry);
 $obj->arrayfun($vall1);
 $obj->endFunc($arry);
+$obj->array_count_values($values);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -45,7 +45,7 @@ echo '<h2>2: Strlen() function</h2>';
 echo 'The string length for ' . $name . ' is ' . strlen($name);
 echo '<hr>';
 }
- // third
+//third
 public function rtrim($str) {
 $str="      Yousef      ";
 echo '<h2>3: Rtrim() function</h2>';
@@ -59,7 +59,6 @@ echo '<h2>4: Htmlspecialchars() function</h2>';
 echo 'The HTML special character for ' . $val . ' is ' . htmlspecialchars($val);
 echo '<hr>';
 }
-
 //fifth 
 public function strpos($strr,$strr2) {
 $strr= 'Mashael Almoqbel is a Student';
@@ -67,7 +66,6 @@ $strr2= 'is';
 echo '<h2>5: Strpos() function</h2>';
 echo 'The position of the string '. '(' . $strr2  . ')' . ' in this sentence ' . '(' . $strr . ')' . ' is: '. $i=strpos($strr,$strr2);
 echo '<hr>';
-
 }
 //sixth
 public function str_replace($str1,$new,$str2){
@@ -186,12 +184,16 @@ echo 'The cursor is moved to the end of the array ' ;
 echo '<hr>';
 }
 //tenth(last!!)
-//public function 
-
+public function array_count_values($values){
+$values=array('meesha','meesha','Nora','Sami');
+echo '<h2>10: Array_count_values() function</h2>';
+$occurance=array_count_values($values);
+echo 'The number of occurances for meesha is: ' . $occurance['meesha'];
+echo '<hr>';
+}
 //destruct
 public function __destruct() {
 echo '</br> Finished!';
 }
 }
-
 ?>
