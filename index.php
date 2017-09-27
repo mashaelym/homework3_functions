@@ -23,6 +23,7 @@ $obj->sort($numbers1);
 $obj->array_unique($uniq);
 $obj->count($arry);
 $obj->arrayfun($vall1);
+$obj->endFunc($arry);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -176,6 +177,16 @@ echo 'Deleting the element in position [2] :  ' ;
 print_r($vall1);
 echo '<hr>';
 }
+//ninth
+public function endFunc($arry){
+$arry=array('Meesha','Nora','Sami');
+end($arry);
+echo '<h2>9: End() function</h2>';
+echo 'The cursor is moved to the end of the array ' ;
+echo '<hr>';
+}
+//tenth(last!!)
+//public function 
 
 //destruct
 public function __destruct() {
