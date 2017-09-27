@@ -22,6 +22,7 @@ $obj->array_product($numbers);
 $obj->sort($numbers1);
 $obj->array_unique($uniq);
 $obj->count($arry);
+$obj->arrayfun($vall1);
 class main {
 public function __construct() {
 echo 'This is an object </br>';
@@ -164,6 +165,15 @@ public function count($arry){
 $arry=array(12,34,5,12,5,4,4,2,7,8);
 echo '<h2>7: Count() function</h2>';
 echo 'The number of elements in the array is  ' . count($arry);
+echo '<hr>';
+}
+//eighth
+public function arrayfun($vall1){
+$vall1=array('Meesha','Nora','Sami','Sara','Jack');
+unset($vall1[2]);
+echo '<h2>8: Unset() function</h2>';
+echo 'Deleting the element in position [2] :  ' ;
+print_r($vall1);
 echo '<hr>';
 }
 
